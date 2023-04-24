@@ -1,0 +1,2 @@
+# generateLog
+Log creation function
