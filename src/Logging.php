@@ -1,6 +1,6 @@
 <?php
 
-namespace App\models;
+namespace Mdabagh\GenerateLog;
 
 use Illuminate\Database\Eloquent\Model;
 

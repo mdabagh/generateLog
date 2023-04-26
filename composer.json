@@ -1,0 +1,24 @@
+{
+    "name": "mdabagh/smschannels",
+    "description": "generate log",
+    "authors": [
+        {
+            "name": "mohammadsajad dabagh"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mdabagh\\GenerateLog\\" : "src/"
+        }
+    },
+    "require": {
+       
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mdabagh\\GenerateLog\\GenerateLogServiceProvider"
+            ]
+        }
+    }
+}
