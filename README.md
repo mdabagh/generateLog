@@ -1,6 +1,10 @@
 # GenerateLog
 
-GenerateLog is a Laravel package that simplifies the process of generating log files and offers powerful customization options for debugging and troubleshooting purposes.
+With the GenerateLog package, you can easily and accurately store your program logs in both database and storage. This package provides the ability to customize log information, such as adding IP addresses, user information, and executed file information to your logs.
+
+Additionally, you can easily set your log level in the env file. For example, you can temporarily disable info logs and later reactivate them as needed.
+
+The GenerateLog package offers customizable features, ease of use, and the ability to manage program logs with precision and high quality.
 
 ## Features
 
