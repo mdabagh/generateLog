@@ -8,9 +8,8 @@ class GLogServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->bind(GLogInterface::class, function() {
-            $state = config('GenerateLog.state_active');
-            return new $state; 
+        $this->app->bind(GLogFactory::class, function() {
+            return new GLogFactory; 
         });
     }
     

@@ -1,4 +1,5 @@
 <?php
+namespace Mdabagh\GenerateLog;
 
 use Mdabagh\GenerateLog\classes\db;
 use Mdabagh\GenerateLog\classes\dbAndStorage;
