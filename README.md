@@ -33,7 +33,7 @@ use Mdabagh\GenerateLog\GLogFactory;
 Then, you can call the `make` method to generate a log file:
 
 ```
-GLogFactory::make($type, $message, $data, $exception, $request, $response);
+GLogFactory::create($type, $message, $data, $exception, $request, $response);
 ```
 
 The `make` method takes six parameters:
