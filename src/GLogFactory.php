@@ -5,11 +5,6 @@ use Mdabagh\GenerateLog\classes\db;
 use Mdabagh\GenerateLog\classes\dbAndStorage;
 use Mdabagh\GenerateLog\classes\storage;
 
-interface LogStrategy
-{
-    public function make($type, $message, $data, $exception, $request, $response);
-}
-
 class GLogFactory
 {
     protected $state_active;
@@ -19,7 +14,7 @@ class GLogFactory
         $this->state_active = config('GLog.state_active');
     }
 
-    public function make($type, $message, $data, $exception, $request, $response)
+    public function create($type, $message, $data, $exception, $request, $response)
     {
         $log_type = config("GLog.log_type_active.{$type}");
 
@@ -29,7 +24,7 @@ class GLogFactory
         }
     }
 
-    protected function getStrategy(): LogStrategy
+    protected function getStrategy()
     {
         switch ($this->state_active) {
             case 'db':
