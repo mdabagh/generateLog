@@ -11,6 +11,8 @@ class GLogServiceProvider extends ServiceProvider
         $this->app->bind(GLogFactory::class, function() {
             return new GLogFactory; 
         });
+
+        $this->mergeConfigFrom(__DIR__.'/../config/GLog.php', 'GLog');
     }
     
     public function boot(){

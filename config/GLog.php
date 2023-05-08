@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Laravel GLOG Package by Mohammadsajad Dabagh.
- */
-
 return [
 
     'state_active' => env('GLOG_STATE_ACTIVE', 'storage'),
